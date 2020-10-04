@@ -19,6 +19,11 @@ config/name="project_collection2D"
 run/main_scene="res://resource/levels/testing.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=800
+window/vsync/use_vsync=false
+
 [input]
 
 W={
@@ -45,6 +50,25 @@ D={
 [rendering]
 
 quality/driver/driver_name="GLES2"
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+quality/directional_shadow/size=256
+quality/directional_shadow/size.mobile=256
+quality/shadow_atlas/size=256
+quality/shadow_atlas/size.mobile=256
+quality/shadow_atlas/quadrant_0_subdiv=0
+quality/shadow_atlas/quadrant_1_subdiv=0
+quality/shadow_atlas/quadrant_2_subdiv=0
+quality/shadow_atlas/quadrant_3_subdiv=0
+quality/reflections/texture_array_reflections=false
+quality/reflections/high_quality_ggx=false
+quality/shading/force_vertex_shading.mobile=false
+quality/shading/force_lambert_over_burley.mobile=false
+quality/shading/force_blinn_over_ggx.mobile=false
+quality/depth_prepass/enable=false
+quality/reflections/atlas_size=126
+quality/reflections/atlas_subdiv=2
+quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"
