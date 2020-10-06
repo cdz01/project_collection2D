@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://resource/UI/GUI.gd" type="Script" id=1]
+
+[node name="GUI" type="CanvasLayer"]
+
+[node name="GUI_control" type="Control" parent="."]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="container_stadistics" type="Panel" parent="GUI_control"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 177.0
+margin_bottom = 79.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lb_health" type="Label" parent="GUI_control/container_stadistics"]
+margin_left = 10.4763
+margin_top = 8.97122
+margin_right = 68.4763
+margin_bottom = 22.9712
+text = "vida: 100"
+__meta__ = {
+"_edit_use_anchors_": false
+}

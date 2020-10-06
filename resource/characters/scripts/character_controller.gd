@@ -19,10 +19,7 @@ func _physics_process(delta) -> void:
 	direction = Vector2(Input.get_action_strength("D") - Input.get_action_strength("A"), 
 	Input.get_action_strength("S") - Input.get_action_strength("W"));
 
-
 	velocity.x = direction.x * speed * time_march;
 	velocity.y = direction.y * speed * time_march;
-
-	print(velocity);
-
+	
 	velocity = move_and_slide(velocity);
